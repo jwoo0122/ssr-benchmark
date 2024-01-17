@@ -9,4 +9,7 @@ export default defineConfig({
     mode: "standalone",
   }),
   integrations: [react()],
+  server: {
+    port: 3000,
+  },
 });
