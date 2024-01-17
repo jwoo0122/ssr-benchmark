@@ -105,3 +105,51 @@ Details (average, fastest, slowest):
 Status code distribution:
   [200] 1022 responses
 ```
+
+## Astro 4 (Node.js SSR Adapter)
+
+```
+Summary:
+  Success rate: 100.00%
+  Total:        60.0010 secs
+  Slowest:      0.7878 secs
+  Fastest:      0.0535 secs
+  Average:      0.0792 secs
+  Requests/sec: 126.2312
+
+  Total data:   2.11 MiB
+  Size/request: 29
+  Size/sec:     36.00 KiB
+
+Response time histogram:
+  0.053 [1]    |
+  0.127 [7532] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.200 [25]   |
+  0.274 [7]    |
+  0.347 [5]    |
+  0.421 [2]    |
+  0.494 [0]    |
+  0.567 [0]    |
+  0.641 [1]    |
+  0.714 [0]    |
+  0.788 [1]    |
+
+Response time distribution:
+  10.00% in 0.0682 secs
+  25.00% in 0.0720 secs
+  50.00% in 0.0792 secs
+  75.00% in 0.0845 secs
+  90.00% in 0.0879 secs
+  95.00% in 0.0902 secs
+  99.00% in 0.1063 secs
+  99.90% in 0.3082 secs
+  99.99% in 0.7878 secs
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0010 secs, 0.0007 secs, 0.0013 secs
+  DNS-lookup:   0.0002 secs, 0.0000 secs, 0.0003 secs
+
+Status code distribution:
+  [200] 7574 responses
+```

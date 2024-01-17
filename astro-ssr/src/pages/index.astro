@@ -1,5 +1,9 @@
 ---
+import IndexComponent from '../components/IndexComponent.jsx'
 
+const { title } = await (
+  await fetch("https://jsonplaceholder.typicode.com/todos/1")
+).json();
 ---
 
 <html lang="en">
@@ -11,6 +15,7 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<IndexComponent title={title} />
 	</body>
 </html>
+
