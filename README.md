@@ -24,10 +24,11 @@ First, you need to install `oha`. Follow [here](https://github.com/hatoo/oha#ins
 
 ## Summary
 
-|Framework|TPS|Avg. Latency(ms)|
-|Astro 4 SSR|128|77|
-|Next.js 14 SSR|123(-4%)|81|
-|Next.js 14 RSC SSR|109(-15%)|91|
+| Framework          |       TPS | Avg. Latency(ms) |
+| ------------------ | --------: | ---------------: |
+| Astro 4 SSR        |       128 |               77 |
+| Next.js 14 SSR     |  123(-4%) |               81 |
+| Next.js 14 RSC SSR | 109(-15%) |               91 |
 
 ## Details
 
