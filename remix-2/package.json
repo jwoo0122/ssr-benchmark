@@ -1,0 +1,22 @@
+{
+  "name": "remix-2",
+  "packageManager": "yarn@4.0.2",
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build/index.js"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.5.0",
+    "@remix-run/react": "^2.5.0",
+    "@remix-run/serve": "^2.5.0",
+    "isbot": "4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remix": "^2.5.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.5.0"
+  }
+}

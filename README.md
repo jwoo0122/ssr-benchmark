@@ -11,6 +11,7 @@ Tested:
 - Next.js 14 SSR (pages router, getServerSideProps)
 - Next.js 14 RSC SSR (app router, dynamic data fetching) [See](https://nextjs.org/docs/app/building-your-application/rendering/server-components#dynamic-rendering)
 - Astro 4 (Node.js SSR adapter)
+- Remix 2
 
 # Repreduction
 
@@ -29,6 +30,7 @@ First, you need to install `oha`. Follow [here](https://github.com/hatoo/oha#ins
 | Astro 4 SSR        |       128 |               77 |
 | Next.js 14 SSR     |  123(-4%) |               81 |
 | Next.js 14 RSC SSR | 109(-15%) |               91 |
+| Remix 2            |  21(-84%) |              457 |
 
 ## Details
 
@@ -174,4 +176,52 @@ Details (average, fastest, slowest):
 
 Status code distribution:
   [200] 7699 responses
+```
+
+### Remix 2
+
+```
+Summary:
+  Success rate: 100.00%
+  Total:        60.0009 secs
+  Slowest:      2.0029 secs
+  Fastest:      0.4086 secs
+  Average:      0.4570 secs
+  Requests/sec: 21.7997
+
+  Total data:   508.38 KiB
+  Size/request: 39
+  Size/sec:     8.47 KiB
+
+Response time histogram:
+  0.409 [1]    |
+  0.568 [1253] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.727 [31]   |
+  0.887 [6]    |
+  1.046 [4]    |
+  1.206 [1]    |
+  1.365 [4]    |
+  1.525 [7]    |
+  1.684 [0]    |
+  1.843 [0]    |
+  2.003 [1]    |
+
+Response time distribution:
+  10.00% in 0.4249 secs
+  25.00% in 0.4319 secs
+  50.00% in 0.4400 secs
+  75.00% in 0.4495 secs
+  90.00% in 0.4576 secs
+  95.00% in 0.4677 secs
+  99.00% in 1.0062 secs
+  99.90% in 1.4604 secs
+  99.99% in 2.0029 secs
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0012 secs, 0.0007 secs, 0.0015 secs
+  DNS-lookup:   0.0004 secs, 0.0000 secs, 0.0007 secs
+
+Status code distribution:
+  [200] 1308 responses
 ```
