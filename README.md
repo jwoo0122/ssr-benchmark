@@ -25,12 +25,26 @@ First, you need to install `oha`. Follow [here](https://github.com/hatoo/oha#ins
 
 ## Summary
 
+### with Oha
+
 | Framework          |       TPS | Avg. Latency(ms) |
 | ------------------ | --------: | ---------------: |
 | Astro 4 SSR        |       128 |               77 |
 | Next.js 14 SSR     |  123(-4%) |               81 |
 | Next.js 14 RSC SSR | 109(-15%) |               91 |
 | Remix 2            |  21(-84%) |              457 |
+
+### with K6 (Next.js 14, custom server)
+
+`k6 run scripts`
+
+- VUs 50
+- Duration 60s
+
+| Framework | TPS | Avg. Latency(ms) |
+| --------- | --: | ---------------: |
+| on Bun    | 613 |               81 |
+| on Node   | 484 |              103 |
 
 ## Details
 
